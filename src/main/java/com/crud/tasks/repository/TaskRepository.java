@@ -1,9 +1,13 @@
 package com.crud.tasks.repository;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.crud.tasks.domain.Task;
+import org.springframework.data.repository.CrudRepository;
 
-public interface TaskRepository {
-    @Autowired
-    private TaskRepository repository;
+import java.util.List;
+import java.util.Optional;
 
+public interface TaskRepository extends CrudRepository<Task, Long> {
+    @Override
+    List<Task> findAll();
+    Optional<Task> findById(Long id);
 }
