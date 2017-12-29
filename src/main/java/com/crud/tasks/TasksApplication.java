@@ -8,12 +8,13 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 public class TasksApplication {
 
-//        extends SpringBootServletInitializer {
+//        extends SpringBootServletInitializer { //--KONIECZNIE DO URUCHOMIENIA ZEWNĘTRZNEGO TOMCATA, wyłączyć dla Heroku
 
     public static void main(String[] args) {
         SpringApplication.run(TasksApplication.class, args);
     }
-//
+
+    //--KONIECZNIE DO URUCHOMIENIA ZEWNĘTRZNEGO TOMCATA, wyłączyć dla Heroku
 //    @Override
 //    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 //        return application.sources(TasksApplication.class);
