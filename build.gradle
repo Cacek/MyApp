@@ -33,9 +33,19 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.projectlombok:lombok:1.16.18')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	//compile('mysql:mysql-connector-java') //-- DO TESTOW LOKALNIE
-	compile('org.postgresql:postgresql') //-- DO TESTOW NA HEROKU
+	compile('org.springframework.boot:spring-boot-starter-mail:1.5.7.RELEASE')
+
+//-- DO TESTOW LOKALNIE - wlaczenie mysql
+	compile('mysql:mysql-connector-java')
+
+//-- DO TESTOW NA HEROKU
+	//compile('org.postgresql:postgresql')
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	//providedRuntime("org.springframework.boot:spring-boot-starter-tomcat") //-- WLACZENIE WBUDOWANEGO TOMCATA
+//	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat") //-- WLACZENIE WBUDOWANEGO TOMCATA
+
+	//Swagger
+	compile('io.springfox:springfox-swagger2:2.7.0')
+	compile('io.springfox:springfox-swagger-ui:2.7.0')
+
 }
