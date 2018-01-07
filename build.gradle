@@ -16,6 +16,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+//External configuration
 //apply plugin: 'war'
 
 group = 'com.crud'
@@ -36,12 +37,15 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-mail:1.5.7.RELEASE')
 
 //-- DO TESTOW LOKALNIE - wlaczenie mysql
+	//Internal & external (local) configuration
 	compile('mysql:mysql-connector-java')
 
 //-- DO TESTOW NA HEROKU
+	//External configuration on Herroku
 	//compile('org.postgresql:postgresql')
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+//External configuration (local)
 //	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat") //-- WLACZENIE WBUDOWANEGO TOMCATA
 
 	//Swagger

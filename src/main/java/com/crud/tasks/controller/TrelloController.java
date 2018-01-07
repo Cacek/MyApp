@@ -22,7 +22,7 @@ public class TrelloController {
     public List<TrelloBoardDto> getTrelloBoards() {
         return trelloService.fetchTrelloBoards();
     }
-    // Poniżej wcześniejszy kod logujący dane do konsoli
+//* Poniżej wcześniejszy kod logujący dane do konsoli
 //        // GET request
 //        List<TrelloBoardDto> trelloBoards = trelloClient.getTrelloBoards();
 //
